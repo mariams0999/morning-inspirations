@@ -24,7 +24,7 @@
       to {opacity: 1;}
     }
 
-    .circle {
+    .circle1,.circle2,.circle3 {
       height: 150px;
       width: 150px;
       background-color: white;
@@ -32,17 +32,36 @@
       display: inline-block;
       margin: 100px;
       margin-top: 200px;
+      padding: 6px;
       text-align: center;
       box-shadow: 6px 6px gray;
       transition: transform 2s;
     }
-
-    .circle:hover {
-      transform: scale(1.5, 1.5);
+    
+    .circle1:hover,.circle2:hover,.circle3:hover {
+      transform: scale(1.6, 1.6);
     }
-
+    
     h2 {
       margin: 60px auto;
+      visibility: visible;
+      transition: opacity 1s;
+    }
+    
+    h2:hover {
+      opacity: 1;
+      visibility: hidden;
+    }
+    
+    p {
+      margin: -100px auto;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 2s;
+    }
+    
+    p:hover {
+      opacity: 1;
     }
   </style>
 </head>
@@ -51,14 +70,18 @@
   <header>
     <strong><h1>Morning Inspirations</h1></strong>
   </header>
-  <div class="circle">
+  <div class="circle1">
     <h2>Happiness</h2>
+    <p>“Be happy with what you have. Be excited about what you want.”<br> -Alan Cohen</p>
   </div>
-  <div class="circle">
+  
+  <div class="circle2">
     <h2>Motivation</h2>
+    <p>"Sucess is not final. Failure is not fatal: it is the courage to continue that counts."<br> -Winston Churchill</p>
   </div>
-  <div class="circle">
-    <h2>Love</h2>
+  <div class="circle3">
+    <h2>Self-love</h2>
+    <p>“Until you value yourself, you won’t value your time. Until you value your time, you will not do anything with it."<br> -M. Scott Peck</p>
   </div>
 </body>
 
