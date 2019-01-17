@@ -6,25 +6,44 @@
   <title>title</title>
   <style type="text/css">
     body {
-      background-image: linear-gradient(to bottom right, rgba(153,0,255,0.5), rgba(250, 51, 153,0.5));
+      background-image: linear-gradient(to bottom right, rgba(153, 0, 255, 0.5), rgba(250, 51, 153, 0.5));
+      height: 100%;
     }
-    
+
     header {
       text-align: center;
       font-size: 50px;
       color: white;
+      text-shadow: 6px 6px purple;
+      animation: header 3s ease-in-out 1 normal;
+      animation-fill-mode: backwards;
     }
-    
+
+    @keyframes header {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
     .circle {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
       background-color: white;
       border-radius: 50%;
       display: inline-block;
-      margin: 50px;
+      margin: 100px;
+      margin-top: 200px;
       text-align: center;
+      box-shadow: 6px 6px gray;
+      transition: transform 2s;
     }
-    
+
+    .circle:hover {
+      transform: scale(1.5, 1.5);
+    }
+
+    h2 {
+      margin: 60px auto;
+    }
   </style>
 </head>
 
@@ -32,10 +51,15 @@
   <header>
     <strong><h1>Morning Inspirations</h1></strong>
   </header>
-  
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
+  <div class="circle">
+    <h2>Happiness</h2>
+  </div>
+  <div class="circle">
+    <h2>Motivation</h2>
+  </div>
+  <div class="circle">
+    <h2>Love</h2>
+  </div>
 </body>
 
 </html>
