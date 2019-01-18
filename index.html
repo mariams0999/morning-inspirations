@@ -19,11 +19,17 @@
       animation: header 3s ease-in-out 1 normal;
       animation-fill-mode: backwards;
       font-family: 'Staatliches', cursive;
+      border-image: url(colors.jpg) 30 round;
+      margin: 80px;
     }
 
     @keyframes header {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .circle {
@@ -33,39 +39,37 @@
       border-radius: 50%;
       display: inline-block;
       margin: 100px;
-      margin-top: 200px;
+      margin-top: 150px;
       padding: 6px;
       text-align: center;
       box-shadow: 6px 6px gray;
-      transition: transform 2s;
+      transition: transform .5s opacity .5s;
     }
-    
+
     .circle:hover {
       transform: scale(1.6, 1.6);
     }
-    
+
     h2 {
-      margin: 60px auto;
+      margin: -100px auto;
       font-family: 'Staatliches', cursive;
       opacity: 1;
-      visibility: visible;
-      transition: opacity 1s;
+      transition: opacity 0.1s;
     }
-    
-    h2:hover {
+
+    .circle:hover h2 {
       opacity: 0;
-      visibility: hidden;
     }
-    
+
     p {
-      margin: -110px auto;
+      margin: 40px auto;
       font-size: 12px;
       opacity: 0;
-      transition: opacity 2s;
       font-family: 'Oswald', sans-serif;
+      transition: opacity 1s;
     }
-    
-    p:hover {
+
+    .circle:hover p {
       opacity: 1;
     }
   </style>
@@ -76,28 +80,28 @@
     <strong><h1>Morning Inspirations</h1></strong>
   </header>
   <div class="circle">
+    <p><br>“Be happy with what you have. Be excited about what you want.”<br> -Alan Cohen</p>
     <h2>Happiness</h2>
-    <p>“Be happy with what you have. Be excited about what you want.”<br> -Alan Cohen</p>
   </div>
-  
+
   <div class="circle">
-    <h2>Motivation</h2>
     <p>"Sucess is not final. Failure is not fatal: it is the courage to continue that counts."<br> -Winston Churchill</p>
+    <h2>Motivation</h2>
   </div>
-  
+
   <div class="circle">
-    <h2>Self-love</h2>
     <p>“Until you value yourself, you won’t value your time. Until you value your time, you will not do anything with it."<br> -M. Scott Peck</p>
+    <h2>Self-love</h2>
   </div>
-  
+
   <div class="circle">
-    <h2>Goals</h2>
     <p>"The new year stands before us, like a chapter in a book, waiting to be written. We can help write that story by setting goals."<br> -Melody Beattie</p>
+    <h2>Goals</h2>
   </div>
   
-  <div class="circle">
-    <h2>Change</h2>
+  <div class="circle ">
     <p>“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”<br> -Albert Einstein</p>
+    <h2>Change</h2>
   </div>
 </body>
 
